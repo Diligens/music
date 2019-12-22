@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>musicres.com</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="main-row">
+      <div class="tape">
+        <h1 class="title_h1">
+          MUSICRES.COM
+        </h1>
+      </div>
+    </div>
+    <form id="search_form" class="form_search" target="_blank" method="GET" action="https://www.google.com/search?q=">
+      <input id="search_input" class="form_search_input" type="search" name="q" placeholder="Global search by..."
+        autoComplete="off" />
+      <div class="buttons">
+        <button class="btn_submit" type="submit" value="Search" onClick="setSearchParams(`https://www.google.com/search?q=`, `q`)">
+          <img class="img_submit" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="google" />
+        </button>
+        <button class="btn_submit" type="submit" value="Search" onClick="setSearchParams(`https://www.youtube.com/results?search_query=`, `q`)">
+          <img class="img_submit" src="https://cdn.worldvectorlogo.com/logos/youtube-2.svg" alt="youtube" />
+        </button>
+        <button class="btn_submit" type="submit" value="Search" onClick="setSearchParams(`https://tunein.com/search/?query=`, `query`)">
+          <img class="img_submit" src="https://musically.com/wp-content/uploads/2018/06/tune-in-logo.png" alt="tunein" />
+        </button>
+        <button class="btn_submit" type="submit" value="Search" onClick="setSearchParams(`https://soundcloud.com/search?q=`, `q`)">
+          <img class="img_submit" src="https://upload.wikimedia.org/wikipedia/ru/9/92/SoundCloud_logo.svg" alt="soundcloud" />
+        </button>
+        <button class="btn_submit" type="submit" value="Search" onClick="setSearchParams(`https://bandcamp.com/search?q=`, `q`)">
+          <img class="img_submit" src="https://upload.wikimedia.org/wikipedia/commons/8/80/Bandcamp-logotype-color.svg" alt="bandcamp" />
+        </button>
+        <button class="btn_submit" type="submit" value="Search" onClick="setSearchParams(`https://www.discogs.com/search/?q=`, `q`)">
+          <img class="img_submit" src="https://www.discogs.com/images/brand/discogs-logo.svg" alt="discogs" />
+        </button>
+      </div>
+    </form>
+
+  </header>
+  <main class="main">
+    <img class="nice-gif" src="https://media.giphy.com/media/xTk9ZLg70jvMTasphu/source.gif" alt="">
+  </main>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

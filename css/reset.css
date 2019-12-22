@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    box-sizing: border-box;
+}
+ul,
+li {
+    list-style: none;
+}
+fieldset {
+    border: solid 0 transparent;
+}
+img,
+input,
+select {
+    border: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+button {
+    border-style: none;
+}
+a {
+    text-decoration: none;
+}
+input {
+    background-color: transparent;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
